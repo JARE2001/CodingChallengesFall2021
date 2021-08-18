@@ -10,7 +10,3 @@ def coinsToTake(n,values):
         else:
             return x
     return x
-
-
-coins = [3,3]
-print( coinsToTake(2, coins) )
