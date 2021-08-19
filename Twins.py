@@ -3,9 +3,10 @@ def twins(num, coins):
 
     dollars = 0
     for element in coins:
-        dollars += element  
+        dollars += element 
     
     coins.sort(reverse = True)
+    print(coins)
 
     acum = 0
     count = 0
@@ -15,3 +16,8 @@ def twins(num, coins):
             acum += element
             count += 1
     return count
+
+num = input()
+coins = input().split()
+
+print(twins(num, coins))

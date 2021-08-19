@@ -10,3 +10,17 @@ def coinsToTake(n,values):
         else:
             return x
     return x
+
+n = input()
+values =input()
+
+aux =[]
+acum =""
+for i in values:
+    acum +=i
+    if i == " ":
+        aux.append(int(acum))
+        acum =""
+aux.append(int(acum))
+
+print(coinsToTake(n,aux))
